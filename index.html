@@ -8,26 +8,74 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/twentytwenty.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
 </head>
 <body class="body">
 
+    <div class="preloader">
+        <div class="preloader__wrapper">
+            <div class="preloader__logo">
+                <div class="loading__100__wrapper">
+                    <div class="loading__100"><img src="img/loading__100.svg" alt=""></div>
+                </div>
+                <div class="loading__0__wrapper">
+                    <div class="loading__0"><img src="img/loading__0.svg" alt=""></div>
+                </div>
+            </div>
+            <div class="preloader__loading">
+                <span class="load__text">Загрузка</span>
+                <span class="load__percent"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal__menu">
+        <div class="modal__menu__container">
+            <div class="modal__menu__close">Закрыть</div>
+            <div class="modal__menu__wrapper">
+                <ul class="modal__menu__nav">
+                    <li><a href="#process" class="modal__nav__link">Процесс имплантации </a></li>
+                    <li><a href="#FAQ" class="modal__nav__link">Вопрос-ответ</a></li>
+                    <li><a href="#implant" class="modal__nav__link">Этапы имплантации </a></li>
+                    <li><a href="#advantages" class="modal__nav__link">Преимущества</a></li>
+                    <li><a href="#gallery" class="modal__nav__link">Галерея </a></li>
+                    <li><a href="#about" class="modal__nav__link">О клинике</a></li>
+                    <li><a href="#doctors" class="modal__nav__link">Врачи</a></li>
+                    <li><a href="#rating" class="modal__nav__link">Отзывы</a></li>
+                    <li><a href="#contacts" class="modal__nav__link">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
     <header class="header">
-        <div class="header__wrapper">
-            <a href="#" class="header__logo"><img src="img/logo_blue.svg" alt="Премьера"></a>
+        <div class="header__wrapper" >
+            <div class="header__left">
+                <a href="#" class="header__logo"><img src="img/logo_blue.svg" alt="Премьера"></a>
+                <a href="#" class="mobile__logo"><img src="img/logo__mobile.svg" alt="Премьера"></a>
+                <div class="hidden__nav">
+                    <div class="nav__line">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </div>
+                    <span class="nav__menu">Меню</span>
+                </div>
+            </div>
             <nav class="header__nav">
                 <ul>
-                    <li><a href="#" class="nav__link">Процесс имплантации </a></li>
-                    <li><a href="#" class="nav__link">Вопрос-ответ</a></li>
-                    <li><a href="#" class="nav__link">Этапы имплантации </a></li>
-                    <li><a href="#" class="nav__link">Преимущества</a></li>
-                    <li><a href="#" class="nav__link">Галерея </a></li>
-                    <li><a href="#" class="nav__link">О клинике</a></li>
-                    <li><a href="#" class="nav__link">Врачи</a></li>
-                    <li><a href="#" class="nav__link">Отзывы</a></li>
-                    <li><a href="#" class="nav__link">Контакты</a></li>
+                    <li><a href="#process" class="nav__link">Процесс имплантации </a></li>
+                    <li><a href="#FAQ" class="nav__link">Вопрос-ответ</a></li>
+                    <li><a href="#implant" class="nav__link">Этапы имплантации </a></li>
+                    <li><a href="#advantages" class="nav__link">Преимущества</a></li>
+                    <li><a href="#gallery" class="nav__link">Галерея </a></li>
+                    <li><a href="#about" class="nav__link">О клинике</a></li>
+                    <li><a href="#doctors" class="nav__link">Врачи</a></li>
+                    <li><a href="#rating" class="nav__link">Отзывы</a></li>
+                    <li><a href="#contacts" class="nav__link">Контакты</a></li>
                 </ul>
             </nav>
             <a href="tel:+73472261391" class="header__contact">+7 (347) 226 13 91</a>
@@ -37,12 +85,27 @@
     <div class="post__header">
         <div class="post__header__wrapper">
             <div class="top__slider-wrapper">
-                <div class="top__slider__item">
-                    <h2 class="item__title">
-                        <span class="color__text">Скидка до 5000 рублей</span> на каждый имплант
-                    </h2>
-                    <div class="item__text">При установке имплантов, мы используем только современные технологии, которые в совокупности с профессионализмом наших врачей обеспечивают высокий процент приживаемости имплантов</div>
+                <div class="top__slider__container">
+                    <div class="top__slider__item">
+                        <h2 class="item__title">
+                            <span class="color__text">Скидка до 5000 рублей</span> на каждый имплант
+                        </h2>
+                        <div class="item__text">При установке имплантов, мы используем только современные технологии, которые в совокупности с профессионализмом наших врачей обеспечивают высокий процент приживаемости имплантов</div>
+                    </div>
+                    <div class="top__slider__item">
+                        <h2 class="item__title">
+                            <span class="color__text">Текст №2
+                        </h2>
+                        <div class="item__text">При установке имплантов, мы используем только современные технологии, которые в совокупности с профессионализмом наших врачей обеспечивают высокий процент приживаемости имплантов</div>
+                    </div>
+                    <div class="top__slider__item">
+                        <h2 class="item__title">
+                            <span class="color__text">Текст №3
+                        </h2>
+                        <div class="item__text">При установке имплантов, мы используем только современные технологии, которые в совокупности с профессионализмом наших врачей обеспечивают высокий процент приживаемости имплантов</div>
+                    </div>
                 </div>
+                <div class="top__slider__dots"></div>
             </div>
             <div class="ceo__info">
                 <div class="ceo__info__text">
@@ -59,7 +122,7 @@
                 <span class="sale">Акция действует до конца месяца!</span>
             </div>
             <div class="header__form__container">
-                <form action="#" method="post">
+                <form enctype="multipart/form-data" method="post" id="form_1" onsubmit="send(event, '/mail.php')" class="call__form">
                     <input type="text" name="name" id="name" placeholder="Ваше имя" class="form__input">
                     <input type="tel" name="phone" id="phone" placeholder="Ваш телефон" class="form__input">
                     <input type="submit" value="Записаться на приём" class="form__submit header__contact">
@@ -68,14 +131,20 @@
         </div>
     </div>
 
-    <div class="process">
+    <div class="process" id="process">
         <h2 class="h2__title">Процесс имплантации</h2>
-        <div class="process__video">
-            <img src="img/process__video.jpg" alt="">
+        <div class="process__implant">
+            <div class="video__wrapper">
+                <div class="playvideo__btn"></div>
+                <img src="img/process__video.jpg" alt="play video">
+                <video id="process" preload="auto" controls="controls">
+                    <source id='mp4' src="video/implant.mp4" type='video/mp4' />
+                </video>
+            </div>
         </div>
     </div>
 
-    <div class="FAQ">
+    <div class="FAQ" id="FAQ">
         <h2 class="h2__title">Ответы на частые вопросы</h2>
         <div class="faq__items">
             <div class="faq__item">
@@ -117,19 +186,25 @@
         </div>
     </div>
 
-    <div class="implant">
-        <div class="implant__wrapper">
+    <div class="implant" id="implant">
+        <div class="implant__wrapper" >
             <h2 class="h2__title">Этапы имплантации</h2>
             <p class="block__description">
                 Вы можете также посмотреть видео о том, как проходит лечение. Убедитесь сами в наших специалистах и узнайте все новое о способах лечения в «Премьере»!
             </p>
             <div class="implant__video">
-                <img src="img/implant__video.jpg" alt="">
+                <div class="video__wrapper">
+                    <div class="playvideo__btn"></div>
+                    <img src="img/implant__video.jpg" alt="play video">
+                    <video id="implant" preload="auto" controls="controls">
+                        <source id='mp4' src="video/implant.mp4" type='video/mp4' />
+                    </video>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="advantages">
+    <div class="advantages" id="advantages">
         <div class="advantages__wrapper">
             <h2 class="h2__title">Преимущества нашей клиники</h2>
             <div class="advantages__items">
@@ -159,10 +234,10 @@
     </div>
 
     <div class="content__form">
-        <div class="content__form__wrapper">
+        <div class="content__form__wrapper"> 
             <div class="content__form__container">
                 <div class="form__title">Запишитесь на бесплатную консультацию!</div>
-                <form action="#" method="post">
+                <form enctype="multipart/form-data" method="post" id="form_2" onsubmit="send(event, '/mail.php')" class="call__form">
                     <input type="text" name="name" id="name" placeholder="Ваше имя" class="form__input">
                     <input type="tel" name="phone" id="phone" placeholder="Ваш телефон" class="form__input">
                     <div class="politics">
@@ -175,18 +250,35 @@
         </div>
     </div>
 
-    <div class="gallery">
+    <div class="gallery" id="gallery">
         <h2 class="h2__title">Галерея работ</h2>
         <div class="gallery__slider">
             <div class="arrow__prev slider__arrow"><img src="img/slider__arrow.svg" alt=""></div>
             <div class="gallery__container">
-                <img src="img/gallery.jpg" alt="">
+                <div class="gallery__item">
+                    <div id='container1'>
+                        <img src='img/gallery__before.jpg'>
+                        <img src='img/gallery__after.jpg'>
+                    </div>
+                </div>
+                <div class="gallery__item">
+                    <div id='container2'>
+                        <img src='img/item__2__before.jpg'>
+                        <img src='img/item__2__after.jpg'>
+                    </div>
+                </div>
+                <!-- <div class="gallery__item">
+                    <div id='container2' class='twentytwenty-container'>
+                        <img src='img/gallery__before.jpg'>
+                        <img src='img/gallery__after.jpg'>
+                    </div>
+                </div> -->
             </div>
             <div class="arrow__next slider__arrow"><img src="img/slider__arrow.svg" alt=""></div>
         </div>
     </div>
 
-    <div class="about">
+    <div class="about" id="about">
         <h2 class="h2__title">О клинике</h2>
         <div class="block__description">
             Наша клиника была основана в 2006-м году. Начиная свой путь с 3 сотрудников в штате, мы выросли до 150 специалистов.
@@ -213,7 +305,7 @@
         </div>
     </div>
 
-    <div class="doctors">
+    <div class="doctors" id="doctors">
         <h2 class="h2__title">Наши врачи</h2>
         <div class="block__description">Самыми главными для любой клиники являются довольные пациенты. На  втором месте находятся довольные сотрудники. Каждый из них представляет собой сплав опыта и желание обучаться новому!</div>
         <div class="doctors__gallery">
@@ -231,56 +323,112 @@
                 </div>
             </div>
             <div class="doctor__list">
-                <div class="doctor__item">
+                <div class="doctor__item one">
                     <img src="img/Rectangle 161.jpg" alt="">
                 </div>
-                <div class="doctor__item">
+                <div class="doctor__item two">
                     <img src="img/Rectangle 162.jpg" alt="">
                 </div>
-                <div class="doctor__item">
+                <div class="doctor__item three">
                     <img src="img/Rectangle 163.jpg" alt="">
                 </div>
-                <div class="doctor__item">
+                <div class="doctor__item four">
                     <img src="img/Rectangle 164.jpg" alt="">
                 </div>
-                <div class="doctor__item">
+                <div class="doctor__item five">
                     <img src="img/Rectangle 165.jpg" alt="">
                 </div>
-                <div class="doctor__item">
+                <div class="doctor__item six">
                     <img src="img/Rectangle 166.jpg" alt="">
                 </div>
-                <div class="doctor__item">
+                <div class="doctor__item seven">
                     <img src="img/Rectangle 167.jpg" alt="">
                 </div>
-                <div class="doctor__item">
+                <div class="doctor__item eight">
                     <img src="img/Rectangle 168.jpg" alt="">
                 </div>
-                <div class="doctor__item">
+                <div class="doctor__item nine">
                     <img src="img/Rectangle 169.jpg" alt="">
                 </div>
-                <div class="doctor__item">
+                <div class="doctor__item ten">
                     <img src="img/Rectangle 170.jpg" alt="">
                 </div>
-                <div class="doctor__item">
+                <div class="doctor__item eleven">
                     <img src="img/Rectangle 171.jpg" alt="">
                 </div>
-                <div class="doctor__item">
+                <div class="doctor__item twelve">
                     <img src="img/Rectangle 172.jpg" alt="">
                 </div>
-                <div class="doctor__item">
+                <div class="doctor__item thirteen">
                     <img src="img/Rectangle 173.jpg" alt="">
                 </div>
-                <div class="doctor__item">
+                <div class="doctor__item fourteen">
                     <img src="img/Rectangle 174.jpg" alt="">
                 </div>
             </div>
         </div>
+        <div class="doctors__mobile">
+            <div class="doctors__mob__wrapper">
+                <div class="doctor__mob__item">
+                    <div class="doctor__mob__name">
+                        <div class="doctor__mob__fio">Хасанов Динислам Миргалиевич</div>
+                        <div class="doctor__mob__spec">Врач-стоматолог-хирург</div>
+                    </div>
+                    <div class="doctor__mob__photo">
+                        <img src="img/doctor__hasanov.png" alt="">
+                    </div>
+                </div>
+                <div class="doctor__mob__item">
+                    <div class="doctor__mob__name">
+                        <div class="doctor__mob__fio">Хасанов Динислам Миргалиевич</div>
+                        <div class="doctor__mob__spec">Врач-стоматолог-хирург</div>
+                    </div>
+                    <div class="doctor__mob__photo">
+                        <img src="img/doctor__hasanov.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="doctors__mob__arrows">
+                <div class="arrow__prev slider__arrow"><img src="img/slider__arrow.svg" alt=""></div>
+                <div class="arrow__next slider__arrow"><img src="img/slider__arrow.svg" alt=""></div>
+            </div>
+        </div>
     </div>
 
-    <div class="rating">
+    
+
+    <div class="rating" id="rating">
         <h2 class="h2__title">Видеоотзывы наших клиентов</h2>
         <div class="rating__wrapper">
             <div class="rating__content">
+                <div class="rating__item">
+                    <div class="rating__info">
+                        <span class="video__name">Видеоотзыв</span>
+                        <span class="video__date">от 10.03.2023</span>
+                    </div>
+                    <span class="play__btn">Посмотреть</span>
+                </div>
+                <div class="rating__item">
+                    <div class="rating__info">
+                        <span class="video__name">Видеоотзыв</span>
+                        <span class="video__date">от 10.03.2023</span>
+                    </div>
+                    <span class="play__btn">Посмотреть</span>
+                </div>
+                <div class="rating__item">
+                    <div class="rating__info">
+                        <span class="video__name">Видеоотзыв</span>
+                        <span class="video__date">от 10.03.2023</span>
+                    </div>
+                    <span class="play__btn">Посмотреть</span>
+                </div>
+                <div class="rating__item">
+                    <div class="rating__info">
+                        <span class="video__name">Видеоотзыв</span>
+                        <span class="video__date">от 10.03.2023</span>
+                    </div>
+                    <span class="play__btn">Посмотреть</span>
+                </div>
                 <div class="rating__item">
                     <div class="rating__info">
                         <span class="video__name">Видеоотзыв</span>
@@ -313,16 +461,13 @@
             <div class="rating__pagination">
                 <div class="arrow__prev slider__arrow"><img src="img/slider__arrow.svg" alt=""></div>
                 <div class="pagination__list">
-                    <div class="page__item">1</div>
-                    <div class="page__item active">2</div>
-                    <div class="page__item">3</div>
                 </div>
                 <div class="arrow__next slider__arrow"><img src="img/slider__arrow.svg" alt=""></div>
                 </div>
         </div>
     </div>
 
-    <div class="contacts">
+    <div class="contacts" id="contacts">
         <h2 class="h2__title">Контакты</h2>
         <div class="contacts__wrapper">
             <div class="address">
@@ -360,7 +505,7 @@
             <div class="contacts__form">
                 <div class="contacts__form__title">Остались вопросы?</div>
                 <div class="contacts__form__text">Оставьте заявку на бесплатную консультацию у специалиста</div>
-                <form action="#" method="post">
+                <form enctype="multipart/form-data" method="post" id="form_3" onsubmit="send(event, '/mail.php')" class="call__form">
                     <input type="text" name="name" id="name" placeholder="Ваше имя" class="form__input">
                     <input type="tel" name="phone" id="phone" placeholder="Ваш телефон" class="form__input">
                     <div class="politics">
@@ -377,11 +522,30 @@
         <div class="footer__wrapper">
             <div class="footer__item">Премьера, 2023</div>
             <div class="footer__item"><a href="#" class="politic__footer">Политика конфиденциальности</a></div>
-            <div class="footer__item">Дизайн и разработка — <a href="#" class="beznebes">BEZNEBES</a></div>
+            <div class="footer__item">Дизайн и разработка — <a href="https://beznebes.ru/" target="_blank" class="beznebes">BEZNEBES</a></div>
         </div>
     </footer>
 
+    <div class="video__modal">
+        <div class="video__container">
+            <div class="modal__close__btn">
+                <img src="img/modal__close.png" alt="">
+            </div>
+            <div class="modal__video__wrapper">
+                <video preload="auto" controls="controls" class="modal__video">
+                    <source id='mp4' src="video/implant.mp4" type='video/mp4' />
+                </video>
+            </div>
+        </div>
+    </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/jquery.event.move.js"></script>
+    <script src="js/jquery.twentytwenty.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
     <script>
@@ -405,6 +569,43 @@
         touchpadSupport   : true,
     })
     </script>
+    <script>
+		// Отправка данных на сервер
+		function send(event, php){
+		console.log("Отправка запроса");
+		event.preventDefault ? event.preventDefault() : event.returnValue = false;
+		var req = new XMLHttpRequest();
+		req.open('POST', php, true);
+		req.onload = function() {
+			if (req.status >= 200 && req.status < 400) {
+			json = JSON.parse(this.response); // Ебанный internet explorer 11
+				console.log(json);
+				
+				// ЗДЕСЬ УКАЗЫВАЕМ ДЕЙСТВИЯ В СЛУЧАЕ УСПЕХА ИЛИ НЕУДАЧИ
+				if (json.result == "success") {
+					// Если сообщение отправлено
+					alert("Сообщение отправлено!");
+				} else {
+					// Если произошла ошибка
+					alert("Ошибка. Сообщение не отправлено!");
+				}
+			// Если не удалось связаться с php файлом
+			} else {alert("Ошибка сервера. Номер: "+req.status);}}; 
+		
+		// Если не удалось отправить запрос. Стоит блок на хостинге
+		req.onerror = function() {alert("Ошибка отправки запроса");};
+		req.send(new FormData(event.target));
+		}
+		
+		document.addEventListener('submit', (e) => { 
+            setTimeout( () => {
+                // Отключаем событие по умолчанию 
+                e.preventDefault(); 
+                // Очищаем поля формы 
+                e.target.reset(); 
+            }, 500)
+        });
+	</script>
     <script src="js/main.js"></script>
 </body>
 </html>
