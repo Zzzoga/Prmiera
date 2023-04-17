@@ -1646,7 +1646,9 @@ span.twentytwenty-right-arrow {
     display: flex;
 }
 .doctor__mob__photo img {
-    width: 75%;
+    width: 70%;
+    bottom: 0;
+    position: relative;
 }
 .doctors__mob__arrows {
     width: 100%;
