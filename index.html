@@ -5,6 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Премьера</title>
+    <style>
+        .overlay {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            transition: all .5s linear;
+            opacity: 1;
+            display: block;
+            z-index: 999999999999;
+            background: #fff;
+        }
+    </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -16,6 +30,8 @@
     <link rel="stylesheet" href="css/media.css">
 </head>
 <body class="body">
+
+    <div class="overlay"></div>
 
     <div class="preloader">
         <div class="preloader__wrapper">
@@ -60,8 +76,8 @@
                 <a href="#" class="mobile__logo"><img src="img/logo__mobile.svg" alt="Премьера"></a>
                 <div class="hidden__nav">
                     <div class="nav__line">
-                        <span class="line"></span>
-                        <span class="line"></span>
+                        <span class="line first"></span>
+                        <span class="line second"></span>
                     </div>
                     <span class="nav__menu">Меню</span>
                 </div>
@@ -81,9 +97,9 @@
             </nav>
             <a href="tel:+73472261391" class="header__contact">+7 (347) 226 13 91</a>
         </div>
-    </header>
+    </header> 
 
-    <div class="post__header" data-aos="fade-up">
+    <div class="post__header">
         <div class="post__header__wrapper">
             <div class="top__slider-wrapper">
                 <div class="top__slider__container">
@@ -91,19 +107,19 @@
                         <h2 class="item__title">
                             <span class="color__text">Скидка до 5000 рублей</span> на каждый имплант
                         </h2>
-                        <div class="item__text">При установке имплантов, мы используем только современные технологии, которые в совокупности с профессионализмом наших врачей обеспечивают высокий процент приживаемости имплантов</div>
+                        <div class="item__text">При установке имплантов, мы используем только современные технологии, которые в совокупности с профессионализмом наших врачей приживаются один раз и на всю жизнь</div>
                     </div>
                     <div class="top__slider__item">
                         <h2 class="item__title">
                             <span class="color__text">Текст №2
                         </h2>
-                        <div class="item__text">При установке имплантов, мы используем только современные технологии, которые в совокупности с профессионализмом наших врачей обеспечивают высокий процент приживаемости имплантов</div>
+                        <div class="item__text">При установке имплантов, мы используем только современные технологии, которые в совокупности с профессионализмом наших врачей приживаются один раз и на всю жизнь</div>
                     </div>
                     <div class="top__slider__item">
                         <h2 class="item__title">
                             <span class="color__text">Текст №3
                         </h2>
-                        <div class="item__text">При установке имплантов, мы используем только современные технологии, которые в совокупности с профессионализмом наших врачей обеспечивают высокий процент приживаемости имплантов</div>
+                        <div class="item__text">При установке имплантов, мы используем только современные технологии, которые в совокупности с профессионализмом наших врачей приживаются один раз и на всю жизнь</div>
                     </div>
                 </div>
                 <div class="top__slider__dots"></div>
@@ -113,409 +129,562 @@
                     <span class="color__text">Ринат Махмуджанович Терегулов</span> наш основатель, владелец, врач стоматолог-хирург-имплантолог 
                 </div>
             </div>
+            <img src="img/header_man.png" alt="" class="header__man">
+            <img src="img/eclipse.svg" alt="" class="eclipse">
         </div>
-    </div>
-
-    <div class="header__form" data-aos="fade-up">
-        <div class="header__form__wrapper">
-            <div class="header__form__text">
-                <h3 class="form__title">Делаем имплантацию зубов по ценам 2020 года!</h3>
-                <span class="sale">Акция действует до конца месяца!</span>
+        <div class="lines__wrapper">
+            <div class="left__line__active">
+                <div class="left__line__overlay"></div>
+                <img src="img/header__left__line__blue.svg" alt="" class="left__line__blue">
             </div>
-            <div class="header__form__container">
-                <form enctype="multipart/form-data" method="post" id="form_1" onsubmit="send(event, '/mail.php')" class="call__form">
-                    <input type="text" name="name" id="name" placeholder="Ваше имя" class="form__input">
-                    <input type="tel" name="phone" id="phone" placeholder="Ваш телефон" class="form__input">
-                    <input type="submit" value="Записаться на приём" class="form__submit header__contact">
-                </form>
-            </div>
-        </div>
-    </div>
-
-    <div class="process" id="process" data-aos="fade-up">
-        <h2 class="h2__title">Процесс имплантации</h2>
-        <div class="process__implant">
-            <div class="video__wrapper">
-                <div class="playvideo__btn"></div>
-                <img src="img/process__video.jpg" alt="play video">
-                <video id="process" preload="auto" controls="controls">
-                    <source id='mp4' src="video/implant.mp4" type='video/mp4' />
-                </video>
+            <div class="right__line__active">
+                <div class="rigth__line__active__wrapper">
+                    <img src="img/header__right__line__blue.svg" alt="" class="left__line__blue">
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="FAQ" id="FAQ" data-aos="fade-up">
-        <h2 class="h2__title">Ответы на частые вопросы</h2>
-        <div class="faq__items">
-            <div class="faq__item">
-                <div class="faq__text">Можно ли установить имплант сразу после удаления зуба</div>
-                <div class="faq__play"></div>
-            </div>
-            <div class="faq__item">
-                <div class="faq__text">Насколько болезненна процедура установки имплантанта</div>
-                <div class="faq__play"></div>
-            </div>
-            <div class="faq__item">
-                <div class="faq__text">Какие существуют противопоказания к имплантации?</div>
-                <div class="faq__play"></div>
-            </div>
-            <div class="faq__item">
-                <div class="faq__text">Можно ли установить имплант сразу после удаления зуба</div>
-                <div class="faq__play"></div>
-            </div>
-            <div class="faq__item">
-                <div class="faq__text">Насколько болезненна процедура установки имплантанта</div>
-                <div class="faq__play"></div>
-            </div>
-            <div class="faq__item">
-                <div class="faq__text">Какие существуют противопоказания к имплантации?</div>
-                <div class="faq__play"></div>
-            </div>
-            <div class="faq__item">
-                <div class="faq__text">Можно ли установить имплант сразу после удаления зуба</div>
-                <div class="faq__play"></div>
-            </div>
-            <div class="faq__item">
-                <div class="faq__text">Насколько болезненна процедура установки имплантанта</div>
-                <div class="faq__play"></div>
-            </div>
-            <div class="faq__item">
-                <div class="faq__text">Какие существуют противопоказания к имплантации?</div>
-                <div class="faq__play"></div>
+    <main class="main">
+        <div class="header__form">
+            <div class="header__form__wrapper">
+                <div class="header__form__text">
+                    <h3 class="form__title">Делаем имплантацию зубов по ценам 2020 года!</h3>
+                    <span class="sale">Акция действует до конца месяца!</span>
+                </div>
+                <div class="header__form__container">
+                    <form enctype="multipart/form-data" method="post" id="form_1" onsubmit="send(event, '/mail.php')" class="call__form">
+                        <input type="text" name="name" id="name" placeholder="Ваше имя" class="form__input">
+                        <input type="tel" name="phone" id="phone" placeholder="Ваш телефон" class="form__input">
+                        <input type="submit" value="Записаться на приём" class="form__submit header__contact">
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="implant" id="implant" data-aos="fade-up">
-        <div class="implant__wrapper" >
-            <h2 class="h2__title">Этапы имплантации</h2>
-            <p class="block__description">
-                Вы можете также посмотреть видео о том, как проходит лечение. Убедитесь сами в наших специалистах и узнайте все новое о способах лечения в «Премьере»!
-            </p>
-            <div class="implant__video">
+        <div class="after__form" data-aos="fade-up" data-aos-duration="2000">
+            <div class="block__description">
+                Наша клиника в городе берется за самые сложные и безнадежные клинические случаи 
+            </div>
+        </div>
+    
+        <div class="process" id="process">
+            <div class="porcess__overlay"></div>
+            <h2 class="h2__title" data-aos="fade-up" data-aos-duration="2000">Процесс имплантации</h2>
+            <div class="process__implant" data-aos="fade-up" data-aos-duration="2000">
                 <div class="video__wrapper">
                     <div class="playvideo__btn"></div>
-                    <img src="img/implant__video.jpg" alt="play video">
-                    <video id="implant" preload="auto" controls="controls">
+                    <img src="img/process__video.jpg" alt="play video">
+                    <video id="process" preload="auto" controls="controls">
                         <source id='mp4' src="video/implant.mp4" type='video/mp4' />
                     </video>
                 </div>
             </div>
         </div>
-    </div>
-
-    <div class="advantages" id="advantages" data-aos="fade-up">
-        <div class="advantages__wrapper">
-            <h2 class="h2__title">Преимущества нашей клиники</h2>
-            <div class="advantages__items">
-                <div class="advantages__item">
-                    <img src="img/advantages__item.jpg" alt="">
-                    <div class="item__overlay"></div>
-                    <div class="item__title">Качество</div>
-                    <div class="item__text">Опыт работы более 16 лет, что позволяет говорить нам об отдаленных результатах и накопленном опыте. Благодаря опыту, мы можем предоставлять расширенные гарантии. На некоторые системы имплантов мы даем пожизненную гарантию.</div>
-                    <div class="item__count">01</div>
+    
+        <div class="FAQ" id="FAQ">
+            <h2 class="h2__title" data-aos="fade-up" data-aos-duration="2000">Ответы на частые вопросы</h2>
+            <div class="faq__items" data-aos="fade-up" data-aos-duration="2000">
+                <div class="faq__item">
+                    <div class="faq__text">Можно ли установить имплант сразу после удаления зуба</div>
+                    <div class="faq__play"></div>
                 </div>
-                <div class="advantages__item">
-                    <img src="img/advantages__item.jpg" alt="">
-                    <div class="item__overlay"></div>
-                    <div class="item__title">Комфорт</div>
-                    <div class="item__text">Мы можем выполнить имплантацию не только быстро, но и абсолютно безболезненно (в течение 20-30 минут).  Каждый операционный блок оснащен всем необходимым, согласно, Международным стандартам. Стерильность в операционном блоке достигается за счет того, что Вы будете находиться за стеклом, как в отдельном боксе.</div>
-                    <div class="item__count">02</div>
+                <div class="faq__item">
+                    <div class="faq__text">Насколько болезненна процедура установки имплантанта</div>
+                    <div class="faq__play"></div>
                 </div>
-                <div class="advantages__item">
-                    <img src="img/advantages__item.jpg" alt="">
-                    <div class="item__overlay"></div>
-                    <div class="item__title">Уникальность</div>
-                    <div class="item__text">Задействуем в работе новейшие технологии, а именно уникальные методики, используемые только нашими специалистами, за счет чего все операции проходят быстро, комфортно и безболезненно. В этом и  заключается уникальность имплантации в нашей клинике.</div>
-                    <div class="item__count">03</div>
+                <div class="faq__item">
+                    <div class="faq__text">Какие существуют противопоказания к имплантации?</div>
+                    <div class="faq__play"></div>
                 </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="content__form" data-aos="fade-up">
-        <div class="content__form__wrapper"> 
-            <div class="content__form__container">
-                <div class="form__title">Запишитесь на бесплатную консультацию!</div>
-                <form enctype="multipart/form-data" method="post" id="form_2" onsubmit="send(event, '/mail.php')" class="call__form">
-                    <input type="text" name="name" id="name" placeholder="Ваше имя" class="form__input">
-                    <input type="tel" name="phone" id="phone" placeholder="Ваш телефон" class="form__input">
-                    <div class="politics">
-                        <input type="checkbox" class="custom-checkbox" id="politic" name="politic" value="yes">
-                        <label for="politic">Я согласен с <a href="#" class="politic__link">политикой конфиденциальности</a></label>
-                    </div>
-                    <input type="submit" value="Записаться на приём" class="form__submit header__contact">
-                </form>
-            </div>
-        </div>
-    </div>
-
-    <div class="gallery" id="gallery" data-aos="fade-up">
-        <h2 class="h2__title">Галерея работ</h2>
-        <div class="gallery__slider">
-            <div class="arrow__prev slider__arrow"><img src="img/slider__arrow.svg" alt=""></div>
-            <div class="gallery__container">
-                <div class="gallery__item">
-                    <div id='container1'>
-                        <img src='img/gallery__before.jpg'>
-                        <img src='img/gallery__after.jpg'>
-                    </div>
+                <div class="faq__item">
+                    <div class="faq__text">Можно ли установить имплант сразу после удаления зуба</div>
+                    <div class="faq__play"></div>
                 </div>
-                <div class="gallery__item">
-                    <div id='container2'>
-                        <img src='img/item__2__before.jpg'>
-                        <img src='img/item__2__after.jpg'>
-                    </div>
+                <div class="faq__item">
+                    <div class="faq__text">Насколько болезненна процедура установки имплантанта</div>
+                    <div class="faq__play"></div>
                 </div>
-                <!-- <div class="gallery__item">
-                    <div id='container2' class='twentytwenty-container'>
-                        <img src='img/gallery__before.jpg'>
-                        <img src='img/gallery__after.jpg'>
-                    </div>
-                </div> -->
-            </div>
-            <div class="arrow__next slider__arrow"><img src="img/slider__arrow.svg" alt=""></div>
-        </div>
-    </div>
-
-    <div class="about" id="about" data-aos="fade-up">
-        <h2 class="h2__title">О клинике</h2>
-        <div class="block__description">
-            Наша клиника была основана в 2006-м году. Начиная свой путь с 3 сотрудников в штате, мы выросли до 150 специалистов.
-Тогда, семнадцать лет назад,  в компании работало всего 3 кресла, спустя 16 лет мы выросли до 34 лечебных кабинетов и планируем расширяться дальше. Совсем скоро компания дойдет до цифры 39 кресел. С этого момента мы будем считаться самой большой клиникой в своей сфере с мощной командой врачей-профессионалов и современными технологиями. 
-        </div>
-        <div class="about__info">
-            <div class="about__img">
-                <img src="img/about.jpg" alt="о клинике">
-            </div>
-            <div class="about__items">
-                <div class="about__item">
-                    <div class="about__item__title">11 500 </div>
-                    <span class="about__item__text">Установленных имплантов</span>
+                <div class="faq__item">
+                    <div class="faq__text">Какие существуют противопоказания к имплантации?</div>
+                    <div class="faq__play"></div>
                 </div>
-                <div class="about__item">
-                    <div class="about__item__title">110 000 </div>
-                    <span class="about__item__text">Довольных клиентов клиники</span>
+                <div class="faq__item">
+                    <div class="faq__text">Можно ли установить имплант сразу после удаления зуба</div>
+                    <div class="faq__play"></div>
                 </div>
-                <div class="about__item">
-                    <div class="about__item__title">17 лет</div>
-                    <span class="about__item__text">Успешной работы</span>
+                <div class="faq__item">
+                    <div class="faq__text">Насколько болезненна процедура установки имплантанта</div>
+                    <div class="faq__play"></div>
+                </div>
+                <div class="faq__item">
+                    <div class="faq__text">Какие существуют противопоказания к имплантации?</div>
+                    <div class="faq__play"></div>
                 </div>
             </div>
         </div>
-    </div>
-
-    <div class="doctors" id="doctors" data-aos="fade-up">
-        <h2 class="h2__title">Наши врачи</h2>
-        <div class="block__description">Самыми главными для любой клиники являются довольные пациенты. На  втором месте находятся довольные сотрудники. Каждый из них представляет собой сплав опыта и желание обучаться новому!</div>
-        <div class="doctors__gallery">
-            <div class="doctor__info">
-                <div class="doctor__name">
-                    <div class="doctor__fio">Хасанов Динислам Миргалиевич</div>
-                    <div class="doctor__spec">Врач-стоматолог-хирург</div>
-                </div>
-                <div class="doctor__photo">
-                    <img src="img/doctor__hasanov.png" alt="">
-                </div>
-                <div class="doctor__profile">
-                    <div class="doctor__text">Окончил БГМУ в 2015-м году</div>
-                    <div class="doctor__text">По словам Динислама — профессия стоматолога, это образ жизни. И здесь важен индивидуальный подход, нужно учитывать каждую мелочь. А еще, молодой хирург поделился простой истиной — нужно относиться к людям так, как хочешь, чтобы люди относились к тебе.</div>
-                </div>
-            </div>
-            <div class="doctor__list">
-                <div class="doctor__item one">
-                    <img src="img/Rectangle 161.jpg" alt="">
-                </div>
-                <div class="doctor__item two">
-                    <img src="img/Rectangle 162.jpg" alt="">
-                </div>
-                <div class="doctor__item three">
-                    <img src="img/Rectangle 163.jpg" alt="">
-                </div>
-                <div class="doctor__item four">
-                    <img src="img/Rectangle 164.jpg" alt="">
-                </div>
-                <div class="doctor__item five">
-                    <img src="img/Rectangle 165.jpg" alt="">
-                </div>
-                <div class="doctor__item six">
-                    <img src="img/Rectangle 166.jpg" alt="">
-                </div>
-                <div class="doctor__item seven">
-                    <img src="img/Rectangle 167.jpg" alt="">
-                </div>
-                <div class="doctor__item eight">
-                    <img src="img/Rectangle 168.jpg" alt="">
-                </div>
-                <div class="doctor__item nine">
-                    <img src="img/Rectangle 169.jpg" alt="">
-                </div>
-                <div class="doctor__item ten">
-                    <img src="img/Rectangle 170.jpg" alt="">
-                </div>
-                <div class="doctor__item eleven">
-                    <img src="img/Rectangle 171.jpg" alt="">
-                </div>
-                <div class="doctor__item twelve">
-                    <img src="img/Rectangle 172.jpg" alt="">
-                </div>
-                <div class="doctor__item thirteen">
-                    <img src="img/Rectangle 173.jpg" alt="">
-                </div>
-                <div class="doctor__item fourteen">
-                    <img src="img/Rectangle 174.jpg" alt="">
+    
+        <div class="implant" id="implant" data-aos="fade-up" data-aos-duration="2000">
+            <div class="implant__wrapper" >
+                <h2 class="h2__title" data-aos="fade-up" data-aos-duration="2000">Этапы имплантации</h2>
+                <p class="block__description" data-aos="fade-up" data-aos-duration="2000">
+                    Вы можете также посмотреть видео об этапах и сроках лечения.
+                </p>
+                <div class="implant__video" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="video__wrapper">
+                        <div class="playvideo__btn"></div>
+                        <img src="img/implant__video.jpg" alt="play video">
+                        <video id="implant" preload="auto" controls="controls">
+                            <source id='mp4' src="video/implant.mp4" type='video/mp4' />
+                        </video>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="doctors__mobile">
-            <div class="doctors__mob__wrapper">
-                <div class="doctor__mob__item">
-                    <div class="doctor__mob__name">
-                        <div class="doctor__mob__fio">Хасанов Динислам Миргалиевич</div>
-                        <div class="doctor__mob__spec">Врач-стоматолог-хирург</div>
+    
+        <div class="advantages" id="advantages">
+            <div class="adv__overlay"></div>
+            <div class="advantages__wrapper">
+                <h2 class="h2__title" data-aos="fade-up" data-aos-duration="2000">Преимущества нашей клиники</h2>
+                <div class="advantages__items" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="advantages__item">
+                        <img src="img/advantages__item.jpg" alt="">
+                        <div class="item__overlay"></div>
+                        <div class="item__title">Качество</div>
+                        <div class="item__text">Опыт работы более 16 лет, что позволяет говорить нам об отдаленных результатах и накопленном опыте. Благодаря опыту, мы можем предоставлять расширенные гарантии. На некоторые системы имплантов мы даем пожизненную гарантию.</div>
+                        <div class="item__count">01</div>
                     </div>
-                    <div class="doctor__mob__photo">
-                        <img src="img/doctor__hasanov.png" alt="">
+                    <div class="advantages__item">
+                        <img src="img/advantages__item__2.jpg" alt="">
+                        <div class="item__overlay"></div>
+                        <div class="item__title">Комфорт</div>
+                        <div class="item__text">Мы можем выполнить имплантацию не только быстро, но и абсолютно безболезненно (в течение 20-30 минут).  Каждый операционный блок оснащен всем необходимым, согласно, Международным стандартам. Стерильность в операционном блоке достигается за счет того, что Вы будете находиться за стеклом, как в отдельном боксе.</div>
+                        <div class="item__count">02</div>
+                    </div>
+                    <div class="advantages__item">
+                        <img src="img/advantages__item__3.jpg" alt="">
+                        <div class="item__overlay"></div>
+                        <div class="item__title">Уникальность</div>
+                        <div class="item__text">Задействуем в работе новейшие технологии, а именно уникальные методики, используемые только нашими специалистами, за счет чего все операции проходят быстро, комфортно и безболезненно. В этом и  заключается уникальность имплантации в нашей клинике.</div>
+                        <div class="item__count">03</div>
                     </div>
                 </div>
-                <div class="doctor__mob__item">
-                    <div class="doctor__mob__name">
-                        <div class="doctor__mob__fio">Хасанов Динислам Миргалиевич</div>
-                        <div class="doctor__mob__spec">Врач-стоматолог-хирург</div>
-                    </div>
-                    <div class="doctor__mob__photo">
-                        <img src="img/doctor__hasanov.png" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="doctors__mob__arrows">
-                <div class="arrow__prev slider__arrow"><img src="img/slider__arrow.svg" alt=""></div>
-                <div class="arrow__next slider__arrow"><img src="img/slider__arrow.svg" alt=""></div>
             </div>
         </div>
-    </div>
-
-    <div class="rating" id="rating" data-aos="fade-up">
-        <h2 class="h2__title">Видеоотзывы наших клиентов</h2>
-        <div class="rating__wrapper">
-            <div class="rating__content">
-                <div class="rating__item">
-                    <div class="rating__info">
-                        <span class="video__name">Видеоотзыв</span>
-                        <span class="video__date">от 10.03.2023</span>
-                    </div>
-                    <span class="play__btn">Посмотреть</span>
-                </div>
-                <div class="rating__item">
-                    <div class="rating__info">
-                        <span class="video__name">Видеоотзыв</span>
-                        <span class="video__date">от 10.03.2023</span>
-                    </div>
-                    <span class="play__btn">Посмотреть</span>
-                </div>
-                <div class="rating__item">
-                    <div class="rating__info">
-                        <span class="video__name">Видеоотзыв</span>
-                        <span class="video__date">от 10.03.2023</span>
-                    </div>
-                    <span class="play__btn">Посмотреть</span>
-                </div>
-                <div class="rating__item">
-                    <div class="rating__info">
-                        <span class="video__name">Видеоотзыв</span>
-                        <span class="video__date">от 10.03.2023</span>
-                    </div>
-                    <span class="play__btn">Посмотреть</span>
-                </div>
-                <div class="rating__item">
-                    <div class="rating__info">
-                        <span class="video__name">Видеоотзыв</span>
-                        <span class="video__date">от 10.03.2023</span>
-                    </div>
-                    <span class="play__btn">Посмотреть</span>
-                </div>
-                <div class="rating__item">
-                    <div class="rating__info">
-                        <span class="video__name">Видеоотзыв</span>
-                        <span class="video__date">от 10.03.2023</span>
-                    </div>
-                    <span class="play__btn">Посмотреть</span>
-                </div>
-                <div class="rating__item">
-                    <div class="rating__info">
-                        <span class="video__name">Видеоотзыв</span>
-                        <span class="video__date">от 10.03.2023</span>
-                    </div>
-                    <span class="play__btn">Посмотреть</span>
-                </div>
-                <div class="rating__item">
-                    <div class="rating__info">
-                        <span class="video__name">Видеоотзыв</span>
-                        <span class="video__date">от 10.03.2023</span>
-                    </div>
-                    <span class="play__btn">Посмотреть</span>
-                </div>
-            </div>
-            <div class="rating__pagination">
-                <div class="arrow__prev slider__arrow"><img src="img/slider__arrow.svg" alt=""></div>
-                <div class="pagination__list">
-                </div>
-                <div class="arrow__next slider__arrow"><img src="img/slider__arrow.svg" alt=""></div>
-                </div>
-        </div>
-    </div>
-
-    <div class="contacts" id="contacts" data-aos="fade-up">
-        <h2 class="h2__title">Контакты</h2>
-        <div class="contacts__wrapper">
-            <div class="address">
-                <div class="top__contacts">
-                    <div class="contacts__left">
-                        <span class="contact__title">Наш адресс</span>
-                        <ul>
-                            <li><a href="#" class="address__link">г. Уфа, ул. Айская, 20</a> (Взрослая)</li>
-                            <li><a href="#" class="address__link">г. Уфа, ул. Айская, 20</a> (Детская)</li>
-                            <li><a href="#" class="address__link">г. Уфа, ул. Дагестанская, д. 12</a></li>
-                            <li><a href="#" class="address__link">г. Уфа, ул. Менделеева, д. 11</a></li>
-                        </ul>
-                    </div>
-                    <div class="contacts__right">
-                        <div class="work__hour">
-                            <span class="contact__title">Время работы</span>
-                            <span class="work__hour__value">с 9-00 до 18-00</span>
+    
+        <div class="content__form" data-aos="fade-up" data-aos-duration="2000">
+            <div class="content__form__wrapper"> 
+                <div class="content__form__container">
+                    <div class="form__title">Запишитесь на бесплатную консультацию!</div>
+                    <form enctype="multipart/form-data" method="post" id="form_2" onsubmit="send(event, '/mail.php')" class="call__form">
+                        <input type="text" name="name" id="name" placeholder="Ваше имя" class="form__input">
+                        <input type="tel" name="phone" id="phone" placeholder="Ваш телефон" class="form__input">
+                        <div class="politics">
+                            <input type="checkbox" class="custom-checkbox" id="politic" name="politic" value="yes">
+                            <label for="politic">Я согласен с <a href="#" class="politic__link">политикой конфиденциальности</a></label>
                         </div>
-                        <div class="work__phone">
-                            <span class="contact__title">Телефон</span>
-                            <span class="work__hour__value">+7 (347) 286-93-93</span>
+                        <input type="submit" value="Записаться на приём" class="form__submit header__contact">
+                    </form>
+                </div>
+            </div>
+        </div>
+    
+        <div class="gallery" id="gallery">
+            <h2 class="h2__title" data-aos="fade-up" data-aos-duration="2000">Галерея работ</h2>
+            <div class="gallery__slider" data-aos="fade-up" data-aos-duration="2000">
+                <div class="arrow__prev slider__arrow"><img src="img/slider__arrow.svg" alt=""></div>
+                <div class="gallery__container">
+                    <div class="gallery__item">
+                        <div id='container1'>
+                            <img src='img/gallery__before.jpg'>
+                            <img src='img/gallery__after.jpg'>
+                        </div>
+                    </div>
+                    <div class="gallery__item">
+                        <div id='container2'>
+                            <img src='img/item__3__before.JPG'>
+                            <img src='img/item__3__after.JPG'>
+                        </div>
+                    </div>
+                    <div class="gallery__item">
+                        <div id='container3'>
+                            <img src='img/item__4__before.JPG'>
+                            <img src='img/item__4__after.JPG'>
+                        </div>
+                    </div>
+                    <div class="gallery__item">
+                        <div id='container4'>
+                            <img src='img/item__5__before.JPG'>
+                            <img src='img/item__5__after.JPG'>
+                        </div>
+                    </div>
+                    <div class="gallery__item">
+                        <div id='container5'>
+                            <img src='img/item__6__before.JPG'>
+                            <img src='img/item__6__after.JPG'>
                         </div>
                     </div>
                 </div>
-                <div class="bottom__contacts">
-                    <span class="contact__title">Оценка независимых порталов о нас</span>
-                    <div class="portals">
-                        <div class="portals__item"><img src="img/Frame 117.svg" alt=""></div>
-                        <div class="portals__item"><img src="img/Frame 118.svg" alt=""></div>
-                        <div class="portals__item"><img src="img/Frame 120.svg" alt=""></div>
-                        <div class="portals__item"><img src="img/Frame 119.svg" alt=""></div> 
+                <div class="arrow__next slider__arrow"><img src="img/slider__arrow.svg" alt=""></div>
+            </div>
+        </div>
+    
+        <div class="about" id="about">
+            <h2 class="h2__title">О клинике</h2>
+            <div class="block__description">
+                Наша клиника была основана в 2006-м году. Начиная свой путь с 3 сотрудников в штате, мы выросли до 150 специалистов.
+    Тогда, семнадцать лет назад,  в компании работало всего 3 кресла, спустя 16 лет мы выросли до 34 лечебных кабинетов и планируем расширяться дальше. Совсем скоро компания дойдет до цифры 39 кресел. С этого момента мы будем считаться самой большой клиникой в своей сфере с мощной командой врачей-профессионалов и современными технологиями. 
+            </div>
+            <div class="about__info">
+                <div class="about__img">
+                    <img src="img/about.jpg" alt="о клинике">
+                </div>
+                <div class="about__items">
+                    <div class="about__item">
+                        <div class="about__item__title first__item"></div>
+                        <span class="about__item__text">Установленных имплантов</span>
+                    </div>
+                    <div class="about__item">
+                        <div class="about__item__title second__item"> </div>
+                        <span class="about__item__text">Довольных клиентов клиники</span>
+                    </div>
+                    <div class="about__item">
+                        <div class="about__item__title third__item"></div>
+                        <span class="about__item__text">Успешной работы</span>
                     </div>
                 </div>
             </div>
-            <div class="contacts__form">
-                <div class="contacts__form__title">Остались вопросы?</div>
-                <div class="contacts__form__text">Оставьте заявку на бесплатную консультацию у специалиста</div>
-                <form enctype="multipart/form-data" method="post" id="form_3" onsubmit="send(event, '/mail.php')" class="call__form">
-                    <input type="text" name="name" id="name" placeholder="Ваше имя" class="form__input">
-                    <input type="tel" name="phone" id="phone" placeholder="Ваш телефон" class="form__input">
-                    <div class="politics">
-                        <input type="checkbox" class="custom-checkbox" id="contact_politic" name="contact_politic" value="yes">
-                        <label for="contact_politic">Я согласен с <a href="#" class="politic__link">политикой конфиденциальности</a></label>
+        </div>
+    
+        <div class="doctors" id="doctors">
+            <h2 class="h2__title">Наши врачи</h2>
+            <div class="block__description">Самыми главными для любой клиники являются довольные пациенты. На  втором месте находятся довольные сотрудники. Каждый из них представляет собой сплав опыта и желание обучаться новому!</div>
+            <div class="doctors__gallery">
+                <div class="overline">
+                    <div class="doctors__bg">
+                        <img src="img/doctors__bg.svg" alt="">
                     </div>
-                    <input type="submit" value="Записаться на приём" class="form__submit header__contact">
-                </form>
+                </div>
+                <div class="doctor__info">
+                    <div class="doctor__name">
+                        <div class="doctor__fio">Хасанов Динислам Миргалиевич</div>
+                        <div class="doctor__spec">Врач-стоматолог-хирург</div>
+                    </div>
+                    <div class="doctor__photo">
+                        <img src="img/doctor__hasanov.png" alt="">
+                    </div>
+                    <div class="doctor__profile">
+                        <div class="doctor__text">Окончил БГМУ в 2015-м году</div>
+                        <div class="doctor__text">По словам Динислама — профессия стоматолога, это образ жизни. И здесь важен индивидуальный подход, нужно учитывать каждую мелочь. А еще, молодой хирург поделился простой истиной — нужно относиться к людям так, как хочешь, чтобы люди относились к тебе.</div>
+                    </div>
+                </div>
+                <div class="doctor__list">
+                    <div class="doctor__item one">
+                        <img src="img/Rectangle 161.jpg" alt="">
+                    </div>
+                    <div class="doctor__item two">
+                        <img src="img/Rectangle 162.jpg" alt="">
+                    </div>
+                    <div class="doctor__item four">
+                        <img src="img/Rectangle 163.jpg" alt="">
+                    </div>
+                    <div class="doctor__item five">
+                        <img src="img/Rectangle 164.jpg" alt="">
+                    </div>
+                    <div class="doctor__item six">
+                        <img src="img/Rectangle 165.jpg" alt="">
+                    </div>
+                    <div class="doctor__item seven">
+                        <img src="img/Rectangle 166.jpg" alt="">
+                    </div>
+                    <div class="doctor__item eight">
+                        <img src="img/Rectangle 168.jpg" alt="">
+                    </div>
+                    <div class="doctor__item nine">
+                        <img src="img/Rectangle 169.jpg" alt="">
+                    </div>
+                    <div class="doctor__item ten">
+                        <img src="img/Rectangle 170.jpg" alt="">
+                    </div>
+                    <div class="doctor__item eleven">
+                        <img src="img/Rectangle 171.jpg" alt="">
+                    </div>
+                    <div class="doctor__item twelve">
+                        <img src="img/Rectangle 172.jpg" alt="">
+                    </div>
+                    <div class="doctor__item thirteen">
+                        <img src="img/Rectangle 173.jpg" alt="">
+                    </div>
+                    <div class="doctor__item fourteen">
+                        <img src="img/Rectangle 174.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="doctors__mobile">
+                <div class="doctors__mob__wrapper">
+                    <div class="doctor__mob__item">
+                        <div class="doctor__mob__name">
+                            <div class="doctor__mob__fio">
+                                Ануфриев Сергей Владимирович
+                                </div>
+                            <div class="doctor__mob__spec">врач стоматолог-ортопед</div>
+                        </div>
+                        <div class="doctor__mob__photo">
+                            <img src="img/doc__1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="doctor__mob__item">
+                        <div class="doctor__mob__name">
+                            <div class="doctor__mob__fio">
+                                Аскаров Альберт Рашидович
+                                </div>
+                            <div class="doctor__mob__spec">врач стоматолог-ортопед</div>
+                        </div>
+                        <div class="doctor__mob__photo">
+                            <img src="img/doc__2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="doctor__mob__item">
+                        <div class="doctor__mob__name">
+                            <div class="doctor__mob__fio">
+                               Галиаскаров Наиль Дамирович
+                                </div>
+                            <div class="doctor__mob__spec">врач стоматолог-хирург-имплантолог</div>
+                        </div>
+                        <div class="doctor__mob__photo">
+                            <img src="img/doc__4.png" alt="">
+                        </div>
+                    </div>
+                    <div class="doctor__mob__item">
+                        <div class="doctor__mob__name">
+                            <div class="doctor__mob__fio">
+                               Ганиев Рустам Вячеславович
+                                </div>
+                            <div class="doctor__mob__spec">врач стоматолог-ортопед</div>
+                        </div>
+                        <div class="doctor__mob__photo">
+                            <img src="img/doc__5.png" alt="">
+                        </div>
+                    </div>
+                    <div class="doctor__mob__item">
+                        <div class="doctor__mob__name">
+                            <div class="doctor__mob__fio">
+                                Дианов Андрей Юрьевич
+                                </div>
+                            <div class="doctor__mob__spec">заведующий филиалом на Менделеева, 170 врач стоматолог-ортопед</div>
+                        </div>
+                        <div class="doctor__mob__photo">
+                            <img src="img/doc__6.png" alt="">
+                        </div>
+                    </div>
+                    <div class="doctor__mob__item">
+                        <div class="doctor__mob__name">
+                            <div class="doctor__mob__fio">
+                                Дианов Дмитрий Юрьевич
+                                </div>
+                            <div class="doctor__mob__spec">врач стоматолог-хирург-имплантолог</div>
+                        </div>
+                        <div class="doctor__mob__photo">
+                            <img src="img/doc__7.png" alt="">
+                        </div>
+                    </div>
+                    <div class="doctor__mob__item">
+                        <div class="doctor__mob__name">
+                            <div class="doctor__mob__fio">
+                                Каримова Ирина Алексеевна
+                                </div>
+                            <div class="doctor__mob__spec">врач стоматолог-ортопед</div>
+                        </div>
+                        <div class="doctor__mob__photo">
+                            <img src="img/doc__8.png" alt="">
+                        </div>
+                    </div>
+                    <div class="doctor__mob__item">
+                        <div class="doctor__mob__name">
+                            <div class="doctor__mob__fio">
+                                Кутушев Марат Раисович
+                                </div>
+                            <div class="doctor__mob__spec">врач стоматолог-ортопед</div>
+                        </div>
+                        <div class="doctor__mob__photo">
+                            <img src="img/doc__9.png" alt="">
+                        </div>
+                    </div>
+                    <div class="doctor__mob__item">
+                        <div class="doctor__mob__name">
+                            <div class="doctor__mob__fio">
+                                Мамоян Усо Карямович
+                                </div>
+                            <div class="doctor__mob__spec">заведующий филиалом Айская, 20 врач стоматолог-хирург-имплантолог</div>
+                        </div>
+                        <div class="doctor__mob__photo">
+                            <img src="img/doc__10.png" alt="">
+                        </div>
+                    </div>
+                    <div class="doctor__mob__item">
+                        <div class="doctor__mob__name">
+                            <div class="doctor__mob__fio">
+                                Орипов Назир Абдугафарович
+                                </div>
+                            <div class="doctor__mob__spec">врач стоматолог-ортопед</div>
+                        </div>
+                        <div class="doctor__mob__photo">
+                            <img src="img/doc__11.png" alt="">
+                        </div>
+                    </div>
+                    <div class="doctor__mob__item">
+                        <div class="doctor__mob__name">
+                            <div class="doctor__mob__fio">
+                                Хамматшин Данис Нафисович
+                                </div>
+                            <div class="doctor__mob__spec">врач стоматолог-хирург-имплантолог</div>
+                        </div>
+                        <div class="doctor__mob__photo">
+                            <img src="img/doc__12.png" alt="">
+                        </div>
+                    </div>
+                    <div class="doctor__mob__item">
+                        <div class="doctor__mob__name">
+                            <div class="doctor__mob__fio">
+                                Шарипов Ирек Фаритович
+                                </div>
+                            <div class="doctor__mob__spec">врач стоматолог-ортопед</div>
+                        </div>
+                        <div class="doctor__mob__photo">
+                            <img src="img/doc__14.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="doctors__mob__arrows">
+                    <div class="arrow__prev slider__arrow"><img src="img/slider__arrow.svg" alt=""></div>
+                    <div class="arrow__next slider__arrow"><img src="img/slider__arrow.svg" alt=""></div>
+                </div>
             </div>
         </div>
-    </div>
+
+    
+        <div class="rating" id="rating">
+            <div class="rating__overlay"></div>
+            <h2 class="h2__title">Видеоотзывы наших клиентов</h2>
+            <div class="rating__wrapper">
+                <div class="rating__content">
+                    <div class="rating__item">
+                        <div class="rating__info">
+                            <span class="video__name">Видеоотзыв</span>
+                            <span class="video__date">от 10.03.2023</span>
+                        </div>
+                        <span class="play__btn">Посмотреть</span>
+                    </div>
+                    <div class="rating__item">
+                        <div class="rating__info">
+                            <span class="video__name">Видеоотзыв</span>
+                            <span class="video__date">от 10.03.2023</span>
+                        </div>
+                        <span class="play__btn">Посмотреть</span>
+                    </div>
+                    <div class="rating__item">
+                        <div class="rating__info">
+                            <span class="video__name">Видеоотзыв</span>
+                            <span class="video__date">от 10.03.2023</span>
+                        </div>
+                        <span class="play__btn">Посмотреть</span>
+                    </div>
+                    <div class="rating__item">
+                        <div class="rating__info">
+                            <span class="video__name">Видеоотзыв</span>
+                            <span class="video__date">от 10.03.2023</span>
+                        </div>
+                        <span class="play__btn">Посмотреть</span>
+                    </div>
+                    <div class="rating__item">
+                        <div class="rating__info">
+                            <span class="video__name">Видеоотзыв</span>
+                            <span class="video__date">от 10.03.2023</span>
+                        </div>
+                        <span class="play__btn">Посмотреть</span>
+                    </div>
+                    <div class="rating__item">
+                        <div class="rating__info">
+                            <span class="video__name">Видеоотзыв</span>
+                            <span class="video__date">от 10.03.2023</span>
+                        </div>
+                        <span class="play__btn">Посмотреть</span>
+                    </div>
+                    <div class="rating__item">
+                        <div class="rating__info">
+                            <span class="video__name">Видеоотзыв</span>
+                            <span class="video__date">от 10.03.2023</span>
+                        </div>
+                        <span class="play__btn">Посмотреть</span>
+                    </div>
+                    <div class="rating__item">
+                        <div class="rating__info">
+                            <span class="video__name">Видеоотзыв</span>
+                            <span class="video__date">от 10.03.2023</span>
+                        </div>
+                        <span class="play__btn">Посмотреть</span>
+                    </div>
+                </div>
+                <div class="rating__pagination">
+                    <div class="arrow__prev slider__arrow"><img src="img/slider__arrow.svg" alt=""></div>
+                    <div class="pagination__list">
+                    </div>
+                    <div class="arrow__next slider__arrow"><img src="img/slider__arrow.svg" alt=""></div>
+                    </div>
+            </div>
+        </div>
+    
+        <div class="contacts" id="contacts">
+            <h2 class="h2__title">Контакты</h2>
+            <div class="contacts__wrapper">
+                <div class="address">
+                    <div class="top__contacts">
+                        <div class="contacts__left">
+                            <span class="contact__title">Наш адресс</span>
+                            <ul>
+                                <li class="address__link">г. Уфа, ул. Айская, д.20 <br>(взрослая и детская)</li>
+                                <li class="address__link">г. Уфа, ул. Менделеева, д. 170 <br>(взрослая и детская)</li>
+                                <li class="address__link">г. Уфа, ул. Дагестанская, д.12 <br>(взрослая и детская)</li>
+                                <li class="address__link">г. Уфа, ул. Менделеева, д. 11 <br>(взрослая)</li>
+                            </ul>
+                        </div>
+                        <div class="contacts__right">
+                            <div class="work__hour">
+                                <span class="contact__title">Время работы</span>
+                                <span class="work__hour__value">с 9-00 до 18-00</span>
+                            </div>
+                            <div class="work__phone">
+                                <span class="contact__title">Телефон</span>
+                                <span class="work__hour__value">+7 (347) 286-93-93</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom__contacts">
+                        <span class="contact__title">Оценка независимых порталов о нас</span>
+                        <div class="portals">
+                            <div class="portals__item"><img src="img/Frame 117.svg" alt=""></div>
+                            <div class="portals__item"><img src="img/Frame 118.svg" alt=""></div>
+                            <div class="portals__item"><img src="img/Frame 120.svg" alt=""></div>
+                            <div class="portals__item"><img src="img/Frame 119.svg" alt=""></div> 
+                        </div>
+                    </div>
+                </div>
+                <div class="contacts__form">
+                    <div class="contacts__form__title">Остались вопросы?</div>
+                    <div class="contacts__form__text">Оставьте заявку на бесплатную консультацию у специалиста</div>
+                    <form enctype="multipart/form-data" method="post" id="form_3" onsubmit="send(event, '/mail.php')" class="call__form">
+                        <input type="text" name="name" id="name" placeholder="Ваше имя" class="form__input">
+                        <input type="tel" name="phone" id="phone" placeholder="Ваш телефон" class="form__input">
+                        <div class="politics">
+                            <input type="checkbox" class="custom-checkbox" id="contact_politic" name="contact_politic" value="yes">
+                            <label for="contact_politic">Я согласен с <a href="#" class="politic__link">политикой конфиденциальности</a></label>
+                        </div>
+                        <input type="submit" value="Записаться на приём" class="form__submit header__contact">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
 
     <footer class="footer">
         <div class="footer__wrapper">
@@ -539,6 +708,8 @@
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
     <script src="js/jquery.event.move.js"></script>
     <script src="js/jquery.twentytwenty.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
