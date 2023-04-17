@@ -3044,7 +3044,7 @@
    padding: 290px 30px 22px 30px;
    background: url(../img/mob__form.jpg) no-repeat center top;
    background-color: #2468c5;
-   background-size: 100%;
+   background-size: contain;
    transform: translateY(0);
    }
    .content__form__container {
