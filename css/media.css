@@ -363,6 +363,7 @@
    }
    .content__form__container .form__submit {
        margin-top: 20px;
+       -webkit-appearance: button;
    }
    .gallery {
        margin-top: -60px;
@@ -1190,6 +1191,7 @@
    }
    .content__form__container .form__submit {
    margin-top: 20px;
+   -webkit-appearance: button;
    }
    .form__input::-webkit-input-placeholder { font-weight: 500; font-size: 12px; line-height: 16px; color: #656565; transition: all .5s ease; -webkit-transition: all .5s ease; -moz-transition: all .5s ease; -ms-transition: all .5s ease; -o-transition: all .5s ease; }
    .form__input::-moz-placeholder          {font-weight: 500;font-size: 12px;line-height: 16px;color: #656565; transition: all .5s ease; -webkit-transition: all .5s ease; -moz-transition: all .5s ease; -ms-transition: all .5s ease; -o-transition: all .5s ease; }/* Firefox 19+ */
@@ -2061,6 +2063,7 @@
    }
    .content__form__container .form__submit {
    margin-top: 16px;
+   -webkit-appearance: button;
    }
    .form__input::-webkit-input-placeholder { font-weight: 500; font-size: 12px; line-height: 16px; color: #656565; transition: all .5s ease; -webkit-transition: all .5s ease; -moz-transition: all .5s ease; -ms-transition: all .5s ease; -o-transition: all .5s ease; }
    .form__input::-moz-placeholder          {font-weight: 500;font-size: 12px;line-height: 16px;color: #656565; transition: all .5s ease; -webkit-transition: all .5s ease; -moz-transition: all .5s ease; -ms-transition: all .5s ease; -o-transition: all .5s ease; }/* Firefox 19+ */
@@ -3039,7 +3042,7 @@
    max-width: 460px;
    width: 100%;
    padding: 290px 30px 22px 30px;
-   background: url(../img/content__form__bg1.jpg) no-repeat center top;
+   background: url(../img/mob__form.jpg) no-repeat center top;
    background-color: #2468c5;
    background-size: 100%;
    transform: translateY(0);
@@ -3077,6 +3080,7 @@
    }
    .content__form__container .form__submit {
    margin-top: 16px;
+   -webkit-appearance: button;
    }
    .form__input::-webkit-input-placeholder { font-weight: 500; font-size: 12px; line-height: 16px; color: #656565; transition: all .5s ease; -webkit-transition: all .5s ease; -moz-transition: all .5s ease; -ms-transition: all .5s ease; -o-transition: all .5s ease; }
    .form__input::-moz-placeholder          {font-weight: 500;font-size: 12px;line-height: 16px;color: #656565; transition: all .5s ease; -webkit-transition: all .5s ease; -moz-transition: all .5s ease; -ms-transition: all .5s ease; -o-transition: all .5s ease; }/* Firefox 19+ */

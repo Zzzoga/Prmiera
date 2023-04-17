@@ -366,6 +366,7 @@ span.sale {
     -moz-transition: all .5s ease; 
     -ms-transition: all .5s ease; 
     -o-transition: all .5s ease; 
+    -webkit-appearance: button;
 }
 
 .form__submit:hover {
@@ -688,6 +689,7 @@ span.sale {
 
 .content__form__container .form__submit {
     margin-top: 29px;
+    -webkit-appearance: button;
 }
 
 .politics {
